@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hawthorn Village</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <style>
+            /* navigation bar */
+            .navbar {
+                margin-bottom: 0;
+                background-color: #000000;
+                z-index: 9999;
+                border: 0;
+                font-size: 12px !important;
+                line-height: 1.2 !important;
+                letter-spacing: 2px;
+                border-radius: 0;
+            }
+
+            .navbar li a, .navbar-nav li.active a {
+                color: #ffffff !important;
+            }
+
+            .navbar-nav li a:hover, .navbar-nav li.active a {
+                color: #a30d14 !important;
+            }
+
+            .navbar-default .navbar-toggle {
+                border-color: transparent;
+                color: #ffffff !important;
+            }
+
+            /* Banner with logo and contact info */
+            .jumbotron {
+                background-image: url(resources/images/websiteBanner.png);
+                background-size: cover;
+                color: #ffffff;
+                padding: 100px 25px;
+            }
+
+            /* Table in pricing tab */
+            td, th {
+                border: 1px solid #ddd;
+                table-layout: fixed;
+            }
+
+            th {
+                padding: 10px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                background-color: #337aff;
+                color: #ffffff;
+            }
+
+            td {
+                padding: 10px;
+                width: 25%;
+            }
+        </style>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Logo goes here</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="apartments.html">APARTMENTS</a></li>
+                        <li><a href="shortStay.html">SHORT STAY BOOKING</a></li>
+                        <li><a href="holidayApartment.html">HOLIDAY APARTMENTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- top of page banner -->
+        <div class="jumbotron text-center">
+            <h1>
+                <img src="resources\images\websiteBannerName.png">
+            </h1>
+        </div>
+
+        <!-- Payment interface (placeholder) -->
+        <div class="container">
+            <h1>Place holder for payment service interface. Image also temporary.</h1>
+            <img src="resources\images\outside.png">
+        </div><br>
+
+        <!-- Image gallery -->
+        <div class="container">
+            <h1>Image gallery?</h1>
+        </div>
+
+        <!-- tabs with information -->
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#description">Description</a></li>
+                <li><a data-toggle="tab" href="#information">Additional Information</a></li>
+                <li><a data-toggle="tab" href="#prices">Prices</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="description" class="tab-pane fade in active">
+                    <br>
+                    <p>If you are looking for holiday accommodation in Castlebar, Hawthorn Village have 
+                        apartments for you to book at affordable rates. Whether you are coming to see the sights,
+                        visit friends, or take in a local event, you can keep your costs down by staying in one of our
+                        comfortable, modern apartments. Two and four bedroom apartments are available, with 
+                        additional sleeping space if required.</p>
+                    <h4>Stay with us and enjoy the following features and services:</h4>
+                    <p>
+                        •Internet access<br>
+                        •Great location for touring around Mayo and Westport<br>                       
+                        •Telephone facilities in each apartment<br>
+                        •Access to gym as well as a recreation room with a pool table<br>
+                        •Free parking<br>
+                        •Furnished apartments with spacious living rooms and all rooms en-suite<br>
+                        •Self-service laundrette on-site<br>
+                        •On-site manager available should you require assistance<br>
+                        •CCTV cameras in operation<br>
+                    </p>
+                    <h4></h4>
+                    <h4>Kitchen/Living Room</h4>
+                    <p>Each apartment is fully fitted with modern kitchen appliances, and comes
+                        complete with utensils and crockery. The living room of each apartment
+                        is provided with comfortable furniture and a television.<br>
+                        All apartments on upper floors feature generous balconies.</p>
+                    <h4>Bedrooms</h4>
+                    <p>All bedrooms feature ample storage space and an en-suite bathroom.
+                        Each bedroom is supplied with a desk, lamps, built in wardrobes and 
+                        a heater. Bed linens and towels may be requested from reception upon
+                        arrival.</p>
+                    <h4>Accessibility</h4>
+                    <p>Hawthorn Village features a number of apartments which have been 
+                        specially adapted for people with disabilities. For further details, 
+                        please contact our office.</p>
+                </div>
+                <div id="information" class="tab-pane fade">
+                    <br>
+                    <h4>Rental Period</h4>
+                    <p>Our holiday apartments may be rented on a daily, weekly or biweekly
+                        basis. If you intend to stay for longer than four weeks, please 
+                        see our short term letting page for information and prices:
+                        <a href="shortStay.html">Short Stay Apartments</a></p>                   
+                    <h4>Key Holders</h4>
+                    If you are locked out of your apartment or lose your key outside of 
+                    office hours, there are key holders on site 24/7. Contact numbers are 
+                    posted on the doors to the front office. 
+                    <h4>Additional Costs</h4>
+                    <p>•The rental fee includes fair usage of Internet and electricity, 
+                        the linen pack (if required), refuse disposal facilities, 
+                        television license, maintenance and a morning bus service
+                        into the town.<br>
+                        •There is an on-site laundrette service with token operated machines. 
+                        Tokens may be purchased at the office or from a dispenser in the 
+                        recreation room for €2.<br>
+                        •In the event that you must avail of the key holder service to 
+                        access your apartment, please note that there is a €5 fee which may 
+                        be paid directly to the key holder or the front office at a later date.</p>
+                </div>
+                <div id="prices" class="tab-pane fade">
+                    <br>
+                    Our apartments are priced to suit your needs. Please see below for 
+                    a full listing. Please note that listed prices are per person.<br>
+                    Our two bedroom apartments can sleep up to three, with one single 
+                    and one double room.<br>
+                    Our four bedroom apartments can sleep up to X, with X single
+                    and X double rooms.<br><br>
+                    <div class="container">
+                        <table id="prices">
+                            <thead>
+                                <tr>
+                                    <th>Beds</th>
+                                    <th>Daily</th>
+                                    <th>Weekly</th>
+                                    <th>Biweekly</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Two Bedroom</td>
+                                    <td>€75</td>
+                                    <td>€more than 75</td>
+                                    <td>€even more than 75</td>
+                                </tr>
+                                <tr>
+                                    <td>Four Bedroom</td>
+                                    <td>€50</td>
+                                    <td>€250</td>
+                                    <td>€450</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid text-center">
+            <a href="holidayApartment.html" title="To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p>Page designed by S. James</p>
+        </footer>
+    </body>
+</html>

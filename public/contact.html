@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hawthorn Village</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>   
+    </head>
+    <body>
+
+        <style>
+            /* navigation bar */
+            .navbar {
+                margin-bottom: 0;
+                background-color: #000000;
+                z-index: 9999;
+                border: 0;
+                font-size: 12px !important;
+                line-height: 1.2 !important;
+                letter-spacing: 2px;
+                border-radius: 0;
+            }
+
+            .navbar li a, .navbar-nav li.active a {
+                color: #ffffff !important;
+            }
+
+            .navbar-nav li a:hover, .navbar-nav li.active a {
+                color: #a30d14 !important;
+            }
+
+            .navbar-default .navbar-toggle {
+                border-color: transparent;
+                color: #ffffff !important;
+            }
+
+            /* Banner with logo and contact info */
+            .jumbotron {
+                background-image: url(resources/images/websiteBanner.png);
+                background-size: cover;
+                color: #ffffff;
+                padding: 100px 25px;
+            }
+
+            /* Contact form */
+            #contactForm {
+                background-color: #c3db4d; 
+            }
+        </style>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Logo goes here</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="apartments.html">APARTMENTS</a></li>
+                        <li><a href="shortStay.html">SHORT STAY BOOKING</a></li>
+                        <li><a href="holidayApartment.html">HOLIDAY APARTMENTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- top of page banner -->
+        <div class="jumbotron text-center">
+            <h1>
+                <img src="resources\images\websiteBannerName.png">
+            </h1>
+        </div>
+
+        <!-- opening hours table -->
+        <div class="container" id="openingHours">
+            <h2>Office Opening Hours:</h2>
+            <table class="table">
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>10a.m. - 1p.m.</td>
+                        <td>2p.m. - 5p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>10a.m. - 1p.m.</td>
+                        <td>2p.m. - 5p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>10a.m. - 1p.m.</td>
+                        <td>2p.m. - 5p.m.</td>
+                    </tr><tr>
+                        <td>Thursday</td>
+                        <td>10a.m. - 1p.m.</td>
+                        <td>2p.m. - 5p.m.</td>
+                    </tr><tr>
+                        <td>Friday</td>
+                        <td>10a.m. - 1p.m.</td>
+                        <td>2p.m. - 5p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Closed</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- contact information -->
+        <div class="container" id="contactForm">
+            <h2 class="text-center">CONTACT</h2>
+            <div class="col-sm-6">
+                <h4>Contact us:</h4>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Castlebar, Co. Mayo</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +353 94 904 3900</p>
+                <p><span class="glyphicon-envelope"></span> hawthornvillagemayo@gmail.com</p>
+            </div>
+            <div class="col-sm-6">
+                <h4><span class="glyphicon glyphicon-pencil"></span> By Post:<br></h4>
+                <p>
+                    Hawthorn Village<br>
+                    Milebush Road<br>
+                    Castlebar<br>
+                    Co. Mayo<br>
+                    F23 DX47
+                </p>
+            </div>
+        </div>
+
+        <div id="googleMap" style="width:100%;height:400px;">
+            <h1>This is where the map will be</h1>
+        </div>
+
+        <footer class="container-fluid text-center">
+            <a href="contact.html" title="To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p>Page designed by S. James</p>
+        </footer>0
+
+        <script>
+            function hawthornMap() {
+                var mapProp = {
+                    center: new google.maps.LatLng(53.844735, -9.283598),
+                    zoom: 5,
+                };
+
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    </body>
+</html>
