@@ -71,6 +71,55 @@ and open the template in the editor.
             body {
                 background-color: #e1eeaa;
             }
+
+            div.gallery {
+                border: 1px solid #ccc;
+            }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+            div.desc {
+                background-color: white;
+                padding: 15px;
+                text-align: center;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+            }
+
+            @media only screen and (max-width: 700px) {
+                .responsive {
+                    width: 49.99999%;
+                    margin: 6px 0;
+                }
+            }
+
+            @media only screen and (max-width: 500px) {
+                .responsive {
+                    width: 100%;
+                }
+            }
+
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
         </style>
 
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -104,14 +153,49 @@ and open the template in the editor.
 
         <!-- Payment interface (placeholder) -->
         <div class="container">
-            <h1>Place holder for payment service interface. Image also temporary.</h1>
-            <img src="resources\images\outside.png">
+            <h1>Place holder for payment service interface.</h1>
         </div><br>
 
         <!-- Image gallery -->
-        <div class="container">
-            <h1>Image gallery?</h1>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="resources\images\twoBedLivingRoom.png">
+                    <img src="resources\images\twoBedLivingRoom.png" alt="Living Room" width="600" height="400">
+                </a>
+                <!-- <div class="desc"><h4>Sitting Room</h4></div> -->
+            </div>
         </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="resources\images\twoBedDining.png">
+                    <img src="resources\images\twoBedDining.png" alt="Dining Room" width="600" height="400">
+                </a>
+                <!-- <div class="desc"><h4>Dining Room</h4></div> -->
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="resources\images\twoBedSingle.png">
+                    <img src="resources\images\twoBedSingle.png" alt="Single Room" width="600" height="400">
+                </a>
+                <!-- <div class="desc"><h4>Single Room</h4></div> -->
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="resources\images\twoBedDouble.png">
+                    <img src="resources\images\twoBedDouble.png" alt="Double Room" width="600" height="400">
+                </a>
+                <!-- <div class="desc"><h4>Double Room</h4></div> -->
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <br>
 
         <!-- tabs with information -->
         <div class="container">
@@ -173,8 +257,7 @@ and open the template in the editor.
                         •Electricity is provided by Pinergy, and each apartment features
                         a monitor which displays usage and remaining credit. Accounts may be 
                         topped up online or at the front office.<br>
-                        •A deposit of X must be paid at the commencement of the contract which 
-                        covers BLANK; as well as an electricity deposit of X to cover excesses,
+                        •A deposit of €650 must be paid at the commencement of the contract,
                         which will be refunded at the end of the contract.<br>
                         •There is an on-site laundrette service with token operated machines. 
                         Tokens may be purchased at the office or from a dispenser in the 
@@ -194,6 +277,7 @@ and open the template in the editor.
                             <thead>
                                 <tr>
                                     <th>Period</th>
+                                    <th>Deposit</th>
                                     <th>Monthly</th>
                                     <th>Total Period</th>
                                 </tr>
@@ -202,10 +286,12 @@ and open the template in the editor.
                                 <tr>
                                     <td>Six Months</td>
                                     <td>€650</td>
+                                    <td>€650</td>
                                     <td>€3,900</td>
                                 </tr>
                                 <tr>
                                     <td>Twelve Months</td>
+                                    <td>€650</td>
                                     <td>€650</td>
                                     <td>€7,800</td>
                                 </tr>
